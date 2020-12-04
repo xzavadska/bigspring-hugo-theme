@@ -1,25 +1,14 @@
 {{ define "main" }}
 
 {{ partial "page-header.html" . }}
-<section class="section bg-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
-          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name">
-          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Your Email">
-          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject">
-          <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message"></textarea>
-          <button type="submit" value="send" class="btn btn-primary">Send Now</button>
-        </form>
-      </div>
-      
-      <div class="col-lg-5 content">
-        {{ .Content }}
-      </div>
-    </div>
-  </div>
-</section>
+<div style="display: flex;justify-content: center">
+  <script type="text/javascript">
+    (function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='la_x2s6df8d';s.async=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
+            'https://support.qualityunit.com/scripts/track.js',
+            function(e){ LiveAgent.createForm('5x9oyn4u', e); });
+  </script>
+
+</div>
 
 <!-- call to action -->
 
